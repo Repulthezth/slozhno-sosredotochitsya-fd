@@ -202,12 +202,6 @@
   font-weight: normal;
 }
 
-.section_alternate {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-
 .section_gallery {
   display: grid;
   gap: 10px;
@@ -377,5 +371,10 @@
   .section_alternate .section__title {
     max-inline-size: 315px;
     justify-self: start;
+    grid-column: span 3;
   }
+
+  .card__list.alternate {
+    grid-column: span 3;
+  } 
 }
