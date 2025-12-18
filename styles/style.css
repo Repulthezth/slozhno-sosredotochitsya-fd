@@ -92,7 +92,7 @@
 .header__theme-menu-button_active {
   outline: 1px solid var(--theme-toggle-color);
   border: none;
-  pointer-events: none
+  pointer-events: none;
 }
 
 .header__theme-menu-button:hover {
@@ -323,16 +323,16 @@
   }
 
   .image__ice-cream {
-    grid-area: image__ice-cream;  
+    grid-area: image__ice-cream;
   }
 
   .image__tape {
     grid-area: image__tape;
-  } 
+  }
 
   .image__books {
     grid-area: image__books;
-  } 
+  }
 
   .image__street {
     grid-area: image__street;
@@ -344,7 +344,6 @@
 }
 
 @media (width >= 1024px) {
-
   .header {
     min-height: 764px;
   }
@@ -366,7 +365,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
-  
+
   .card__list {
     grid-column: span 2;
   }
@@ -379,5 +378,4 @@
     max-inline-size: 315px;
     justify-self: start;
   }
-
 }
