@@ -273,23 +273,25 @@
     justify-self: end;
   }
 
-  .section {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-
   .content {
     margin: 60px 20px;
     gap: 80px;
   }
 
-  .section_alternate {
-    grid-template-columns: 1fr;
+  .section-why {
+    grid-template-columns: 1fr 2fr;
   }
 
-  .section_alternate .section__title {
-    max-inline-size: 236px;
-    justify-self: start;
+  .section-causes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section-causes .card__list {
+    grid-column: span 3;
+  }
+
+  .section-advices {
+    grid-template-columns: 1fr 2fr;
   }
 
   .section_gallery {
@@ -356,25 +358,18 @@
   }
 
   .section {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .card__list {
+  .section-why .card__list {
     grid-column: span 2;
   }
 
-  .section_alternate .card__list {
+  .section-causes .card__list {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .section_alternate .section__title {
-    max-inline-size: 315px;
-    justify-self: start;
-    grid-column: span 3;
-  }
-
-  .card__list.alternate {
-    grid-column: span 3;
+  .section-advices .card__list {
+    grid-column: span 2;
   }
 }
